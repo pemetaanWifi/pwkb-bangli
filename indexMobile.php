@@ -74,7 +74,7 @@
 
                     <?php
         
-                        $mysqli = mysqli_connect('localhost', 'id19028635_percobaan', 'FHveRI6j(kkcL~PK', 'id19028635_dbpercobaan');
+                        $mysqli = mysqli_connect('sql6.freesqldatabase.com', 'sql6501749', '3LSA9zjYQi', 'sql6501749');
                         $show = mysqli_query($mysqli, "select * from tbJaringan");
                         while($result = mysqli_fetch_array($show)){ ?>
 
@@ -102,7 +102,7 @@
                         </thead>
                         <tbody>
                             <?php
-                            $mysqli = mysqli_connect('localhost', 'id19028635_percobaan', 'FHveRI6j(kkcL~PK', 'id19028635_dbpercobaan');
+                            $mysqli = mysqli_connect('sql6.freesqldatabase.com', 'sql6501749', '3LSA9zjYQi', 'sql6501749');
                             $jaringan = mysqli_query($mysqli, "select * from tbJaringan");
                             while($row = mysqli_fetch_array($jaringan))
                             {
