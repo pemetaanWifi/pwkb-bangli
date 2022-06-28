@@ -53,7 +53,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-lg fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="/TA2/gambar/logo.png" alt="logo kominfo">
+                <img src="/gambar/logo.png" alt="logo kominfo">
             </a> 
             <button
                 class="navbar-toggler"
@@ -128,7 +128,7 @@
                     }).addTo(map);
                     
                     var WIcon = L.icon({
-                        iconUrl: '/TA2/gambar/wifi.png',
+                        iconUrl: '/gambar/wifi.png',
                         
                         iconSize:     [40, 40],
                     });
