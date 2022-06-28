@@ -67,7 +67,7 @@
                     }).addTo(map);
                     
                     var WIcon = L.icon({
-                        iconUrl: '/TA2/gambar/wifi.png',
+                        iconUrl: '/gambar/wifi.png',
                         
                         iconSize:     [40, 40],
                     });
