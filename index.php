@@ -155,9 +155,9 @@
                     <table id="example" class="ui celled table"> 
                         <thead>
                             <tr>
-                                <th>MAC Address</th>
                                 <th>SSID</th>
-                                <th>Level</th>
+                                <th>MAC Address</th>
+				<th>Level</th>
                                 <th>Frequency</th>
                                 <th>Jenis Sandi</th>
                             </tr>
@@ -169,8 +169,8 @@
                             while($row = mysqli_fetch_array($jaringan))
                             {
                                 echo"<tr>
-                                <td>".$row['macAddress']."</td>
                                 <td>".$row['ssid']."</td>
+				<td>".$row['macAddress']."</td>
                                 <td>".$row['level']."</td>
                                 <td>".$row['frequency']."</td>
                                 <td>".$row['capability']."</td>
