@@ -20,7 +20,7 @@
         </thead>
         <tbody>
             <?php
-                $mysqli = mysqli_connect('localhost', 'root', '', 'id19028635_dbpercobaan');
+                $mysqli = mysqli_connect('sql6.freesqldatabase.com', 'sql6501749', '3LSA9zjYQi', 'sql6501749');
                 $jaringan = mysqli_query($mysqli, "select * from tbJaringan");
                 while($row = mysqli_fetch_array($jaringan))
                 {
