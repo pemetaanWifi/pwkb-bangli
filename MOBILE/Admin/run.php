@@ -21,7 +21,7 @@
         <tbody>
             <?php
                 $mysqli = mysqli_connect('localhost', 'root', '', 'id19028635_dbpercobaan');
-                $jaringan = mysqli_query($mysqli, "select * from tbjaringan");
+                $jaringan = mysqli_query($mysqli, "select * from tbJaringan");
                 while($row = mysqli_fetch_array($jaringan))
                 {
                     echo'<tr>
