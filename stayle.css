@@ -1,0 +1,15 @@
+.banner {
+    background: url("/TA2/gambar/background.jpg") no-repeat center center;
+    background-size: cover;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    color: #ffffff;
+}
+.tim img{
+    width: 200px;
+    border: 10px solid #cccccc;
+}
+html, body, #map {
+    height: 100%;
+    width: 100vw;
+}

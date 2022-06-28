@@ -1,0 +1,9 @@
+
+.tim img{
+    width: 200px;
+    border: 10px solid #cccccc;
+}
+html, body, #map {
+    height: 100%;
+    width: 100vw;
+}
