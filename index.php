@@ -135,8 +135,8 @@
 
                     <?php
         
-                        $mysqli = mysqli_connect('localhost', 'root', '', 'id19028635_dbpercobaan');
-                        $show = mysqli_query($mysqli, "select * from tbjaringan");
+                        $mysqli = mysqli_connect('sql6.freesqldatabase.com', 'sql6501749', '3LSA9zjYQi', 'sql6501749');
+                        $show = mysqli_query($mysqli, "select * from tbJaringan");
                         while($result = mysqli_fetch_array($show)){ ?>
 
                         L.marker([<?php echo str_replace(['[', ']', 'location', '(', ')'], '', $result['location']); ?>], {icon: WIcon}).addTo(map).bindPopup(`<?php echo 'SSID :'.$result['ssid'].'<br>Frequency:'.$result['frequency']; ?>`)
@@ -164,8 +164,8 @@
                         </thead>
                         <tbody>
                             <?php
-                            $mysqli = mysqli_connect('localhost', 'root', '', 'id19028635_dbpercobaan');
-                            $jaringan = mysqli_query($mysqli, "select * from tbjaringan");
+                            $mysqli = mysqli_connect('sql6.freesqldatabase.com', 'sql6501749', '3LSA9zjYQi', 'sql6501749');
+                            $jaringan = mysqli_query($mysqli, "select * from tbJaringan");
                             while($row = mysqli_fetch_array($jaringan))
                             {
                                 echo"<tr>
