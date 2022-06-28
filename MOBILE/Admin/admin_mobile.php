@@ -97,7 +97,7 @@
 
                     <?php
         
-                        $show = mysqli_query($conn, "select * from tbjaringan");
+                        $show = mysqli_query($conn, "select * from tbJaringan");
                         while($result = mysqli_fetch_array($show)){ ?>
 
                         L.marker([<?php echo str_replace(['[', ']', 'location', '(', ')'], '', $result['location']); ?>], {icon: WIcon}).addTo(map).bindPopup(`<?php echo 'SSID :'.$result['ssid'].'<br>Frequency:'.$result['frequency']; ?>`)
