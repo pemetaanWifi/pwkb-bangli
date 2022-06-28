@@ -1,7 +1,7 @@
 <?php
     function selectTbl(){
         global $conn;
-        $sql = "SELECT * FROM tbjaringan";
+        $sql = "SELECT * FROM tbJaringan";
         $perintah = mysqli_query($conn, $sql);
         if(!$perintah) die("Gagal memilih tabel :" .$conn->connect_error());
         return $perintah;
