@@ -90,7 +90,7 @@
                     }).addTo(map);
                     
                     var WIcon = L.icon({
-                        iconUrl: '/TA2/gambar/wifi.png',
+                        iconUrl: '/gambar/wifi.png',
                         
                         iconSize:     [40, 40],
                     });
@@ -154,7 +154,7 @@
                     <p>
                         Export Data Ke Excel:
                         <a href='run.php' target='_blank' type='button' class='btn btn-default'>
-                            <img src='/TA2/gambar/xls.png' width='30' /> Export
+                            <img src='/gambar/xls.png' width='30' /> Export
                         </a>
                     </p>
                     <button type="submit" class="btn btn-md btn-danger" name="proses">Hapus</button>
