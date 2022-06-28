@@ -2,7 +2,7 @@
 define('HOST', 'localhost');
 define('USER', 'root');
 define('PASS', '');
-define('DB', 'id19028635_dbpercobaan');
+define('DB', 'sql6501749');
 $conn = new mysqli(HOST, USER, PASS, DB);
 if($conn==false):
     die("gagal melakukan koneksi :" .$conn->connect_error());
