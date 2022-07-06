@@ -14,7 +14,7 @@
             $jum = count($mac);
 
                 for($i=0; $i<$jum; $i++){
-                    mysqli_query($conn, "DELETE FROM tbjaringan WHERE macaddress='$mac[$i]'")
+                    pg_query($conn, "DELETE FROM tbjaringan WHERE macaddress='$mac[$i]'")
                     or die (pg_result_error($conn));
                 }
         }
