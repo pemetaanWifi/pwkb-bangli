@@ -135,9 +135,9 @@
 
                     <?php
         
-                        $mysqli = mysqli_connect('sql6.freesqldatabase.com', 'sql6501749', '3LSA9zjYQi', 'sql6501749');
-                        $show = mysqli_query($mysqli, "select * from tbJaringan");
-                        while($result = mysqli_fetch_array($show)){ ?>
+                        $mysqli = pg_connect('ec2-54-227-248-71.compute-1.amazonaws.com', 'tqzwwxdkhvujwb', '0125b49d9b9c0297b96c86cc66b606951c7b6b8aba427a169150c493bb0d7344', 'd13gbsqvfk72d4');
+                        $show = pg_query($mysqli, "select * from tbjaringan");
+                        while($result = pg_fetch_array($show)){ ?>
 
                         L.marker([<?php echo str_replace(['[', ']', 'location', '(', ')'], '', $result['location']); ?>], {icon: WIcon}).addTo(map).bindPopup(`<?php echo 'SSID :'.$result['ssid'].'<br>Frequency:'.$result['frequency']; ?>`)
 
@@ -164,9 +164,9 @@
                         </thead>
                         <tbody>
                             <?php
-                            $mysqli = mysqli_connect('sql6.freesqldatabase.com', 'sql6501749', '3LSA9zjYQi', 'sql6501749');
-                            $jaringan = mysqli_query($mysqli, "select * from tbJaringan");
-                            while($row = mysqli_fetch_array($jaringan))
+                            $mysqli = pg_connect('ec2-54-227-248-71.compute-1.amazonaws.com', 'tqzwwxdkhvujwb', '0125b49d9b9c0297b96c86cc66b606951c7b6b8aba427a169150c493bb0d7344', 'd13gbsqvfk72d4');
+                            $jaringan = pg_query($mysqli, "select * from tbjaringan");
+                            while($row = pg_fetch_array($jaringan))
                             {
                                 echo"<tr>
                                 <td>".$row['ssid']."</td>
