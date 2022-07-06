@@ -170,7 +170,7 @@
                             {
                                 echo"<tr>
                                 <td>".$row['ssid']."</td>
-				<td>".$row['macAddress']."</td>
+				<td>".$row['macaddress']."</td>
                                 <td>".$row['level']."</td>
                                 <td>".$row['frequency']."</td>
                                 <td>".$row['capability']."</td>
