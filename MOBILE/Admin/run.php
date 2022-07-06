@@ -20,12 +20,12 @@
         </thead>
         <tbody>
             <?php
-                $mysqli = mysqli_connect('sql6.freesqldatabase.com', 'sql6501749', '3LSA9zjYQi', 'sql6501749');
-                $jaringan = mysqli_query($mysqli, "select * from tbJaringan");
-                while($row = mysqli_fetch_array($jaringan))
+                $mysqli = pg_connect("host=ec2-54-227-248-71.compute-1.amazonaws.com port=5432 dbname=d13gbsqvfk72d4 user=tqzwwxdkhvujwb password=0125b49d9b9c0297b96c86cc66b606951c7b6b8aba427a169150c493bb0d7344");
+                $jaringan = pg_query($mysqli, "select * from tbjaringan");
+                while($row = pg_fetch_array($jaringan))
                 {
                     echo'<tr>
-                    <td>'.$row['macAddress'].'</td>
+                    <td>'.$row['macaddress'].'</td>
                     <td>'.$row['ssid'].'</td>
                     <td>'.$row['level'].'</td>
                     <td>'.$row['frequency'].'</td>
