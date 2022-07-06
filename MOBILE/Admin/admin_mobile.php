@@ -4,10 +4,10 @@
     $jar_err = "";
     if($_SERVER['REQUEST_METHOD']=='POST'){
 
-        if(empty($_POST['macAddress'])){
+        if(empty($_POST['macaddress'])){
             $jar_err =  "Pilih data yang akan di hapus!"; 
         }else{
-            $jar=$_POST['macAddress'];
+            $jar=$_POST['macaddress'];
             $jar=implode(",",$jar);
         }
         if(empty($jar_err)){
@@ -97,8 +97,8 @@
 
                     <?php
         
-                        $show = mysqli_query($conn, "select * from tbJaringan");
-                        while($result = mysqli_fetch_array($show)){ ?>
+                        $show = pg_query($conn, "select * from tbjaringan");
+                        while($result = pg_fetch_array($show)){ ?>
 
                         L.marker([<?php echo str_replace(['[', ']', 'location', '(', ')'], '', $result['location']); ?>], {icon: WIcon}).addTo(map).bindPopup(`<?php echo 'SSID :'.$result['ssid'].'<br>Frequency:'.$result['frequency']; ?>`)
 
@@ -127,12 +127,12 @@
                         <tbody>
                             <?php
                             $jaringan = selectTbl();
-                            while($row = mysqli_fetch_array($jaringan)){
+                            while($row = pg_fetch_array($jaringan)){
                                 echo'
                                     <tr>
-                                        <td><input type="checkbox" name="macAddress[]" value="'.$row['macAddress'].'"></td> 
+                                        <td><input type="checkbox" name="macaddress[]" value="'.$row['macaddress'].'"></td> 
                                         <td>'.$row['ssid'].'</td>
-                                        <td>'.$row['macAddress'].'</td>
+                                        <td>'.$row['macaddress'].'</td>
                                         <td>'.$row['level'].'</td>
                                         <td>'.$row['frequency'].'</td>
                                         <td>'.$row['capability'].'</td>
