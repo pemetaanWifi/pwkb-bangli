@@ -8,7 +8,6 @@
     $capability = isset($_POST["capability"]) ? $_POST["capability"] : "";
     $location = isset($_POST["location"]) ? $_POST["location"] : "";
     $date = date("Y-m-d h:i:sa");
-    echo $date;
   
     if($conn == true){
         $sql_macaddr = "SELECT * FROM tbjaringan WHERE macaddress LIKE '$macAddress'";
