@@ -1,5 +1,5 @@
 <?php
-require_once 'conn.php';
+include 'conn.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
