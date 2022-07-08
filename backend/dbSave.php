@@ -1,5 +1,5 @@
 <?php
-    require "conn.php";
+    require "../conn.php";
     date_default_timezone_set("Asia/Makassar");
     $macAddress = isset($_POST["macAddress"])? $_POST["macAddress"] : "";
     $ssid = isset($_POST["ssid"]) ? $_POST["ssid"] : "";
