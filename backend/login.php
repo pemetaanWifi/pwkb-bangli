@@ -1,5 +1,5 @@
 <?php                                                                                                                               
-require "conn.php";
+require "../conn.php";
     $username = isset($_POST["username"]) ? $_POST["username"] : "";
     $password = isset($_POST["password"]) ? $_POST["password"] : "";
     if($conn){
