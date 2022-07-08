@@ -160,6 +160,7 @@
 				<th>Level</th>
                                 <th>Frequency</th>
                                 <th>Jenis Sandi</th>
+				<th>Terakhir Pindai</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -174,6 +175,7 @@
                                 <td>".$row['level']."</td>
                                 <td>".$row['frequency']."</td>
                                 <td>".$row['capability']."</td>
+				<td>'.$row['date'].'</td>
                                 </tr>";
                             }
                             ?>
