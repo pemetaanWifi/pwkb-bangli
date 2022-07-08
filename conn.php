@@ -6,4 +6,5 @@
     $conn = pg_connect("host=$servename port=5432 dbname=$db_name user=$username password=$password");
     $dbopts = parse_url(getenv('DATABASE_URL'));
     echo $dbopts;
+    echo "hello";
 ?>
