@@ -1,5 +1,5 @@
 <?php
-    require_once 'koneksi.php';
+    require_once '../../conn.php';
     require_once 'fungsi.php';
     require('../../../vendor/autoload.php');
     $jar_err = "";
@@ -123,6 +123,7 @@
                                 <th>Level</th>
                                 <th>Frequency</th>
                                 <th>Jenis Sandi</th>
+				<th>Terakhir Dipindai</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -137,6 +138,7 @@
                                         <td>'.$row['level'].'</td>
                                         <td>'.$row['frequency'].'</td>
                                         <td>'.$row['capability'].'</td>
+					<td>'.$row['date'].'</td>
                                     </tr>';
                                 }
                             ?>
