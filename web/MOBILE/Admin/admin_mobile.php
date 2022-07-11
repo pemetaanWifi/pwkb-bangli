@@ -116,7 +116,7 @@
                     <table id="example" class="ui celled table"> 
                         <thead>
                             <tr>
-                                <th width="1 0">Aksi</th>
+                                <th>Aksi</th>
                                 <th>SSID</th>
                                 <th>MAC Address</th>
                                 <th>Level</th>
