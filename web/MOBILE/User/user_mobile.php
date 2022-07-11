@@ -1,3 +1,6 @@
+<?PHP?
+require_once '../../conn.php';
+>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -73,9 +76,7 @@
                     });
 
                     <?php
-        
-                        $mysqli = pg_connect("host=ec2-54-227-248-71.compute-1.amazonaws.com port=5432 dbname=d13gbsqvfk72d4 user=tqzwwxdkhvujwb password=0125b49d9b9c0297b96c86cc66b606951c7b6b8aba427a169150c493bb0d7344");
-                        $show = pg_query($mysqli, "select * from tbjaringan");
+                        $show = pg_query($conn, "select * from tbjaringan");
                         while($result = pg_fetch_array($show)){ ?>
 
                         L.marker([<?php echo str_replace(['[', ']', 'location', '(', ')'], '', $result['location']); ?>], {icon: WIcon}).addTo(map).bindPopup(`<?php echo 'SSID :'.$result['ssid'].'<br>Frequency:'.$result['frequency']; ?>`)
@@ -102,8 +103,7 @@
                         </thead>
                         <tbody>
                             <?php
-                            $mysqli = pg_connect("host=ec2-54-227-248-71.compute-1.amazonaws.com port=5432 dbname=d13gbsqvfk72d4 user=tqzwwxdkhvujwb password=0125b49d9b9c0297b96c86cc66b606951c7b6b8aba427a169150c493bb0d7344");
-                            $jaringan = pg_query($mysqli, "select * from tbjaringan");
+                            $jaringan = pg_query($conn, "select * from tbjaringan");
                             while($row = pg_fetch_array($jaringan))
                             {
                                 echo"<tr>
