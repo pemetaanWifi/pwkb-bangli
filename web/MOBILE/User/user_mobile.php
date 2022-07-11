@@ -1,6 +1,6 @@
-<?PHP?
+<?PHP
 require_once '../../conn.php';
->
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
