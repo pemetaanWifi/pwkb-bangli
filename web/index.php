@@ -199,7 +199,7 @@ $app->run();
                                 <td>".$row['level']."</td>
                                 <td>".$row['frequency']."</td>
                                 <td>".$row['capability']."</td>
-				<td>'.$row['date'].'</td>
+				<td>".$row['date']."</td>
                                 </tr>";
                             }
                             ?>
