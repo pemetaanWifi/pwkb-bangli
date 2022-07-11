@@ -6,7 +6,7 @@
 //     $conn = pg_connect("host=$servename port=5432 dbname=$db_name user=$username password=$password");
 
 $conn = pg_connect(getenv("postgres://yttgpfdezcpmwh:b5a8771ca470e873cf1c62ffbd60638d2645c51d0c0355eaec6214d99b42785d@ec2-34-233-115-14.compute-1.amazonaws.com:5432/dblt24t1fid74q"));
-$db = parse_url(getenv("DATABASE_URL"));
+$db = parse_url(getenv("postgres://yttgpfdezcpmwh:b5a8771ca470e873cf1c62ffbd60638d2645c51d0c0355eaec6214d99b42785d@ec2-34-233-115-14.compute-1.amazonaws.com:5432/dblt24t1fid74q"));
 $db["path"] = ltrim($db["path"], "/");
 
 echo $conn;
