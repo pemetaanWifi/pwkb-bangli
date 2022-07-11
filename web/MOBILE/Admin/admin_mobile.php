@@ -1,6 +1,7 @@
 <?php
     require_once 'koneksi.php';
     require_once 'fungsi.php';
+    require('../../../vendor/autoload.php');
     $jar_err = "";
     if($_SERVER['REQUEST_METHOD']=='POST'){
 
