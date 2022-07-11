@@ -5,6 +5,7 @@
     header("Expires: 0");
 
     require_once '../../koneksi.php';
+    require('../../../vendor/autoload.php');
 ?>
 <!DOCTYPE html>
 <head>
