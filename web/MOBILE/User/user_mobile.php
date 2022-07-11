@@ -100,6 +100,7 @@ require('../vendor/autoload.php');
                                 <th>Level</th>
                                 <th>Frequency</th>
                                 <th>Jenis Sandi</th>
+				<th>Trakhir Dipindai</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -113,6 +114,7 @@ require('../vendor/autoload.php');
                                 <td>".$row['level']."</td>
                                 <td>".$row['frequency']."</td>
                                 <td>".$row['capability']."</td>
+				<td>".$row['date']."</td>
                                 </tr>";
                             }
                             ?>
