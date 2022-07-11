@@ -15,5 +15,8 @@
         $db["pass"],
         ltrim($db["path"], "/")
     ));
+echo $db;
+echo $pdo;
+echo "hello";
 
 ?>
