@@ -4,7 +4,7 @@
     header("Pragma: no-cache");
     header("Expires: 0");
 
-    require_once '../../koneksi.php';
+    require_once '../../conn.php';
     require('../../../vendor/autoload.php');
 ?>
 <!DOCTYPE html>
