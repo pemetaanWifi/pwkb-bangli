@@ -160,7 +160,7 @@
                             <img src='/gambar/xls.png' width='30' /> Export
                         </a>
                     </p>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Hapus</button> 
+                    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">Hapus</button> 
                     <span class="text-danger"><?php echo $jar_err; ?></span> 
                     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog">
