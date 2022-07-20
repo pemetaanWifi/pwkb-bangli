@@ -36,7 +36,7 @@
             if(pg_query($conn,$sql_register)){
                 echo "Data ditambahkan";
             }else{
-                echo "gagal menambahkan data";
+                echo "Gagal menambahkan data";
             }
         }
     }
