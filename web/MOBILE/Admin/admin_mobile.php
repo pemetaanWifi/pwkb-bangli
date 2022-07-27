@@ -101,7 +101,7 @@
                         $show = pg_query($conn, "select * from tbjaringan");
                         while($result = pg_fetch_array($show)){ ?>
 
-                        L.marker([<?php echo str_replace(['[', ']', 'location', '(', ')'], '', $result['location']); ?>], {icon: WIcon}).addTo(map).bindPopup(`<?php echo 'SSID :'.$result['ssid'].'<br>Frequency:'.$result['frequency']; ?>`)
+                        L.marker([<?php echo str_replace(['[', ']', 'location', '(', ')'], '', $result['location']); ?>], {icon: WIcon}).addTo(map).bindPopup(`<?php echo 'SSID : '.$result['ssid'].'<br>Frequency : '.$result['frequency'].'<br>Macaddress : '.$result['macaddress']; ?>`)
 
                     <?php } ?>
                 </script>
