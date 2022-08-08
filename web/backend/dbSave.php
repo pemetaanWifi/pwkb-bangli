@@ -20,7 +20,7 @@
             $level_check = pg_query($conn, $sql_level);
             $level_check_fetch = pg_fetch_array($level_check);
             if($level >= $level_check_fetch[0]){
-                $sql_register = "UPDATE tbjaringan SET level='$level',location='$location',date='$date' WHERE macaddress LIKE '$macAddress'";
+                $sql_register = "UPDATE tbjaringan SET ssid='$ssid', level='$level',location='$location',date='$date' WHERE macaddress LIKE '$macAddress'";
                 if(pg_query($conn,$sql_register)){
                     echo "Data diperbarui";
                 }else{
