@@ -13,7 +13,7 @@
               echo "12Hour: ". $default_dt. "  ||  24Hour: ". $dt. "<br>";
           }
           else{
-            echo "12Hour: ". $default_dt. "  ||  24Hour: ". $dt. "<br>";
+            echo "12Hour: ". $default_dt. "  ||  24Hour: ". "<br>";
           }
         }
 //       if(pg_query($conn,$sql_register)){
