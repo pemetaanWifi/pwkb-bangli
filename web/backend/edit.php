@@ -6,14 +6,14 @@
 //       $sql_register = "UPDATE tbjaringan SET frequency='5' WHERE frequency LIKE '5GHz'";
       $jaringan = pg_query($conn, "select date from tbjaringan");
       while($row = pg_fetch_array($jaringan)){
-            echo "date time: ".$row['date']. "<br>";
+            echo "date time: ". $row['date']. "<br>";
         }
 //       if(pg_query($conn,$sql_register)){
 //           echo "Data diperbarui";
 //       }else{
 //           echo "Gagal memperbarui data";
 //       }
-//     }
+    }
     else{
         echo "Connection Error";
     }
