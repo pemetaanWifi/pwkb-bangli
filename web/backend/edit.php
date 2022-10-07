@@ -8,7 +8,7 @@
       while($row = pg_fetch_array($jaringan)){
           $default_dt = $row['date'];
           $dt = date("Y-m-d h:i:s", strtotime($row['date']));
-          echo "12Hour: ". $default_dt. "  ||  24Hour: ". date("Y-m-d h:i:s", strtotime($row['date']);. "<br>";
+          echo "12Hour: ". $default_dt. "  ||  24Hour: ". $dt. "<br>";
         }
 //       if(pg_query($conn,$sql_register)){
 //           echo "Data diperbarui";
