@@ -9,7 +9,7 @@
           $default_dt = $row['date'];
           $dt = date("Y-m-d h:i:s", strtotime($row['date']));
           if (str_contains($default_dt, 'pm')){
-              $dt = date("Y-m-d h:i:s", strtotime('+24 hours', $dt));
+              $dt = date("Y-m-d h:i:s", strtotime('+12 hours', strtotime($dt)));
               echo "12Hour: ". $default_dt. "  ||  24Hour: ". $dt. "<br>";
           }
           else{
