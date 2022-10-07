@@ -8,7 +8,7 @@
       while($row = pg_fetch_array($jaringan)){
 //           $dt = $row['date'];
 //           echo $dt. "<br>";
-          echo date_format($row['date'],"Y-m-d h:i:s");
+          echo date("Y-m-d h:i:s", strtotime($row['date']));
 //                 $row['date'];. "  ||  24Hour: ". date("Y-m-d h:i:s", strtotime($row['date']);. "<br>";
         }
 //       if(pg_query($conn,$sql_register)){
