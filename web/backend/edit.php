@@ -6,7 +6,9 @@
 //       $sql_register = "UPDATE tbjaringan SET frequency='5' WHERE frequency LIKE '5GHz'";
       $jaringan = pg_query($conn, "select date from tbjaringan");
       while($row = pg_fetch_array($jaringan)){
-            echo date("Y-m-d h:i:s", strtotime($row['date']);
+          $dt = $row['date'];
+          echo $dt. "<br>";
+          echo date("Y-m-d h:i:s", strtotime($dt);
 //                 $row['date'];. "  ||  24Hour: ". date("Y-m-d h:i:s", strtotime($row['date']);. "<br>";
         }
 //       if(pg_query($conn,$sql_register)){
