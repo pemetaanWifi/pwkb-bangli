@@ -8,6 +8,10 @@
       while($row = pg_fetch_array($jaringan)){
           $default_dt = $row['date'];
           $dt = date("Y-m-d h:i:s", strtotime($row['date']));
+          if (str_contains($default_dt, 'pm')){
+              $dt = date("Y-m-d h:i:s", strtotime($row['date'])+43200);
+              echo "12Hour: ". $default_dt. "  ||  24Hour: ". $dt. "<br>";
+          }
           echo "12Hour: ". $default_dt. "  ||  24Hour: ". $dt. "<br>";
         }
 //       if(pg_query($conn,$sql_register)){
