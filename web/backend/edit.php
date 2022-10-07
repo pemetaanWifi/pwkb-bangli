@@ -7,15 +7,7 @@
       $jaringan = pg_query($conn, "select date from tbjaringan");
       while($row = pg_fetch_array($jaringan)){
           $default_dt = $row['date'];
-          $dt = date("Y-m-d h:i:s", strtotime($row['date']));
-          if (str_contains($default_dt, 'pm')){
-              $dt = date("Y-m-d h:i:s", strtotime('+43200', strtotime($dt)));
-              echo "12Hour: ". $default_dt. "  ||  24Hour: ". $dt. "<br>";
-          }
-          else{
-            echo "12Hour: ". $default_dt. "  ||  24Hour: ". "<br>";
-          }
-        }
+          echo "12Hour: ". $default_dt. "<br>";
 //       if(pg_query($conn,$sql_register)){
 //           echo "Data diperbarui";
 //       }else{
