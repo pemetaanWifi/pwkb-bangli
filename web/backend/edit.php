@@ -12,7 +12,9 @@
               $dt = date("Y-m-d h:i:s", strtotime($row['date'])+43200);
               echo "12Hour: ". $default_dt. "  ||  24Hour: ". $dt. "<br>";
           }
-          echo "12Hour: ". $default_dt. "  ||  24Hour: ". $dt. "<br>";
+          else{
+            echo "12Hour: ". $default_dt. "  ||  24Hour: ". $dt. "<br>";
+          }
         }
 //       if(pg_query($conn,$sql_register)){
 //           echo "Data diperbarui";
