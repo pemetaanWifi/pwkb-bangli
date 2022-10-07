@@ -2,7 +2,7 @@
 require "../conn.php";
     $username = isset($_POST["username"]) ? $_POST["username"] : "";
     $password = isset($_POST["password"]) ? $_POST["password"] : "";
-    $testi = "admin"
+    $testi = "admin";
     $pass_H = md5($testi);
     if($conn){
         $sqlLogin = "SELECT * FROM tblogin WHERE username LIKE '$username' AND password LIKE '$password'";
