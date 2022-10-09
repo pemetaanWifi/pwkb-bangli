@@ -175,8 +175,8 @@ require('../vendor/autoload.php');
                                 echo"<tr>
                                 <td>".$row['ssid']."</td>
 				<td>".$row['macaddress']."</td>
-                                <td>".$row['level']."</td>
-                                <td>".$row['frequency']."</td>
+                                <td>".$row['level']." % </td>
+                                <td>".$row['frequency']." GHz </td>
                                 <td>".$row['capability']."</td>
 				<td>".$row['date']."</td>
                                 </tr>";
