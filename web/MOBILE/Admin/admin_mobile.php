@@ -135,8 +135,8 @@
                                         <td><input type="checkbox" name="macaddress[]" value="'.$row['macaddress'].'"></td> 
                                         <td>'.$row['ssid'].'</td>
                                         <td>'.$row['macaddress'].'</td>
-                                        <td>'.$row['level'].'</td>
-                                        <td>'.$row['frequency'].'</td>
+                                        <td>'.$row['level'].' % </td>
+                                        <td>'.$row['frequency'].' GHz </td>
                                         <td>'.$row['capability'].'</td>
 					<td>'.$row['date'].'</td>
                                     </tr>';
